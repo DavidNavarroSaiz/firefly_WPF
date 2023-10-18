@@ -1,5 +1,5 @@
 
-<h1 align="center">Firefly DL Demo</h1>
+<h1 align="center">Deep learning Smart camerademo</h1>
 
 <details open="open">
   <summary>Table of Contents</summary>
@@ -19,6 +19,9 @@
 </p>
 
 Deep learning is a powerful tool for designers to quickly automate complex and subjective decision-making, aiming to deliver high-quality products and achieve greater productivity. Implement your trained neural network on the FLIR Firefly DL with Neuro technology and reduce the cost and complexity of the system by making decisions within the camera, without the need for a host PC. With its very small size, low weight, and power consumption, the Firefly DL camera is ideal for integration into mobile, desktop, and portable systems.
+
+This project showcases the potential of deploying trained neural networks directly on the FLIR Firefly DL camera, enabling real-time decision-making without relying on a separate PC. The application in toilet classification is just one example; this technology can be extended to various object classification and detection tasks. The lightweight and compact nature of the Firefly DL camera makes it versatile for integration into diverse systems.
+
 
 ![camera](https://www.flir.es/globalassets/imported-assets/image/firefly-dl-floating-right-1019.png "camera")
 
@@ -63,4 +66,20 @@ For this demo, a toilet classification system with five different classes has be
  - On the welcome screen, select TensorFlow and click continue.
    ![](https://www.flir.com/globalassets/support/iis/application-notes/tan2019003-ffy-dl-windows/neuro-utility-welcome.jpg)
  - Enter the information as shown:
-  ![](https://www.flir.com/globalassets/support/iis/appli
+  ![](https://www.flir.com/globalassets/support/iis/application-notes/tan2019003-ffy-dl-windows/neuro-utility-setup.jpg)
+- Click Continue.
+- On the Convert screen, click the Click to Convert button.
+ ![](https://www.flir.com/globalassets/support/iis/application-notes/tan2019003-ffy-dl-windows/neuro-utility-conversion.jpg)
+- Choose where to save the file:
+  - **Flash:** has a slower load, but the file is saved after a camera power cycle.
+  - **DDR:** has a faster load, but the file is lost after a camera power cycle.
+- Click on Configure and Deploy.
+- Open the project solution in VisualStudio.
+- Add a reference to the project *SpinnakerNET_v140.dll*.
+- Run the project.
+![](\\Resources\\Firefly_DL.png)
+<!-- <img src="./Resources/Firefly_DL.png" >
+<img src="./Resources/Firefly_DL_1.png" >
+<img src="./Resources/Firefly_DL_2.png" > -->
+
+
